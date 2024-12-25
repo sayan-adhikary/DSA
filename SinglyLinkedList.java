@@ -11,15 +11,28 @@ public class SinglyLinkedList {             //v-36-41
         }
     }
 
-    public void display(){
+    public void display(){                  //v-40
         ListNode current=head;
         while (current!=null) {
             System.out.print(current.data+" --> ");
             current=current.next;
         }
-        System.out.print("null");
+        System.out.println("null");
     }
-    public static void main(String[] args) {
+
+    public int length(){                    //v-42
+        if(head == null){
+        return 0;
+        }
+        int count = 0;
+        ListNode current = head;
+        while(current!=null){
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+    public static void main(String[] args) {            //v-38
         SinglyLinkedList sll=new SinglyLinkedList();
         sll.head=new ListNode(10);
         ListNode second=new ListNode(1);
@@ -31,5 +44,6 @@ public class SinglyLinkedList {             //v-36-41
         second.next=third;      //10-->1-->8
         third.next=fourth;      //10-->1-->8-->11-->null
         sll.display();
+        System.out.println("Length is - " + sll.length());
     }
 }
