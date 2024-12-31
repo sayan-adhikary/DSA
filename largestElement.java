@@ -11,6 +11,7 @@ public class largestElement {
                 smallest = arr[i];
             }
     }
+
     // return largest;
     System.out.println("Largest value: "+ largest);
     System.out.println("Smallest value: "+ smallest);
