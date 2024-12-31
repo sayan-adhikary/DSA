@@ -7,11 +7,11 @@ public class binarySearch {
             if (arr[mid] == key) {
                 return mid;
             }
-            if(arr[mid] > key){
-                end = mid - 1;
-            }
             if(arr[mid] < key){
                 start = mid + 1;
+            }
+            if(arr[mid] > key){
+                end = mid - 1;
             }
         }
         return -1;
@@ -20,5 +20,5 @@ public class binarySearch {
         int []number = {2,4,6,8,10,12,14};
         int key = 10;
         System.out.println(binarySearch(number, key));
-      }
+    }
 }
