@@ -1,7 +1,7 @@
 # DSA in JAVA
 
-# Topics
-## Array
+## Topics
+### Array
 |  |
 | ------- |
 | Operation (Create,Input,Output,Update) |
