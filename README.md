@@ -1,4 +1,4 @@
-## DSA in JAVA
+# DSA in JAVA
 
 # Topics
 ## Array
@@ -9,3 +9,4 @@
 | Largest Number |
 | Binary Search |
 | Reverce An Array |
+| Pairs in An Array |
