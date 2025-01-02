@@ -11,4 +11,4 @@
 | **Reverce An Array** |
 | **Pairs in An Array** |
 | **Print SubArray** |
-| **Max SubArray(Brute Force),(Prefix Sum),(Kadane's)** |
+| **MaxSum SubArray(Brute Force),(Prefix Sum),(Kadane's Algorithm)** |
