@@ -1,4 +1,4 @@
-public class subArray {
+class subArray {
     static void subArray(int arr[]){
         int TN = 0;
         for (int i = 0; i < arr.length; i++) {                  //loop run till arr.length

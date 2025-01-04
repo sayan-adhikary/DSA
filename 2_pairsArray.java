@@ -1,4 +1,4 @@
-public class pairsArray {
+class pairsArray {
     static void pairsArray(int arr[]){
         int tp = 0;
         for (int i = 0; i < arr.length; i++) {
