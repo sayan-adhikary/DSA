@@ -1,4 +1,4 @@
-public class subArraySum1 {
+class subArraySum1 {
 
     //Brute Force                                                       3type explaination are their
     public static void subArraySum1(int arr[]){
