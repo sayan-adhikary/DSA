@@ -1,4 +1,4 @@
-public class trappRainWater {
+class trappRainWater {
     static int trappRainWater(int []height){                   //TC = O(n)
 
         int n = height.length;
