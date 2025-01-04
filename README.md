@@ -13,4 +13,5 @@
 | **Print SubArray** |
 | **MaxSum SubArray(Brute Force),(Prefix Sum),(Kadane's Algorithm)** |
 | **Rain trapped water** |
-|**Buy And Sell Stock** |
+| **Buy And Sell Stock** |
+|  |
