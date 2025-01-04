@@ -1,6 +1,6 @@
 class array{
     // public static void main(String[] args) {
-
+    
         //Create
 
         int arr[] = new int [5];

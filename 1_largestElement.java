@@ -1,4 +1,4 @@
-public class largestElement {
+class largestElement {
     static void largestElement(int []arr){
         int largest = Integer.MIN_VALUE;
         int smallest = Integer.MAX_VALUE;
