@@ -12,3 +12,4 @@
 | **Pairs in An Array** |
 | **Print SubArray** |
 | **MaxSum SubArray(Brute Force),(Prefix Sum),(Kadane's Algorithm)** |
+| **Rain trapped water** |
