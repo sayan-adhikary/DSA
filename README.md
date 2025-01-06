@@ -96,8 +96,8 @@
 
 |   |
 | ------------ |
-| **Inbuild Sort** |
-| *Accending Order* :- **Arrays.sort(arr)**|
+| **Inbuild Sorting** |
+| *Accending Order* :- **Arrays.sort(arr);** **Arrays.sort(arr,0,3);**|
+| *Decending Order* :- **Arrays.sort(arr,Collections.reverseOrder());** **Arrays.sort(arr,0,3,Collections.reverseOrder());**|
 |*TC* :- $O(n \log n)$|
-| *Decending Order* :- **Arrays.sort(arr)**|
-|*TC* :- $O(n \log n)$|
+||
