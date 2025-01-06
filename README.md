@@ -1,7 +1,7 @@
 # DSA in JAVA
 
 ## Topics
-### Array
+### 1. Array
 |  |
 | ------- |
 | **Operation (Create,Input,Output,Update)** |
@@ -82,3 +82,22 @@
         <li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 
 </ul>
+
+
+### 2. Sorting
+|  |
+| ------- |
+| **Basic Algoritham** |
+| |
+| **Bubble Sort** |
+| **Selection Sort** |
+| **Insertion Sort** |
+| **Counting Sort** |
+
+|   |
+| ------------ |
+| **Inbuild Sort** |
+| *Accending Order* :- **Arrays.sort(arr)**|
+|*TC* :- $O(n \log n)$|
+| *Decending Order* :- **Arrays.sort(arr)**|
+|*TC* :- $O(n \log n)$|
