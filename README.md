@@ -101,3 +101,13 @@
 | *Decending Order* :- **Arrays.sort(arr,Collections.reverseOrder());** **Arrays.sort(arr,0,3,Collections.reverseOrder());**|
 |*TC* :- $O(n \log n)$|
 ||
+### 3. 2D Array
+|   |
+|   ------------------  |
+| **2D Array** |
+| *Example* |
+| *Representation* |
+| **Spiral Matrix** |
+| **Diagonal Sum** |
+| **Search is Sorted Matrix** <br> *Staircase Search*|
+||
