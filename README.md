@@ -85,7 +85,7 @@
 
 <p>&nbsp;</p>
 
-**1.5.3_ You are given an array prices where prices[i] is the price of a given stock on the ith day.** 
+**1.5.3_You are given an array prices where prices[i] is the price of a given stock on the ith day.** 
 **<p>Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.</p>**
 
 <p><strong class="example">Example 1:</strong></p>
@@ -110,6 +110,36 @@
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
     <li><code>0<sup></sup> &lt;= Prices[i] &lt;= 10<sup>4</sup></code></li>
+</ul>
+
+<p>&nbsp;</p>
+
+**1.5.4_Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.** 
+
+
+<p><strong class="example">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> height = [0,1,0,2,1,0,1,3,2,1,2,1]
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. 
+</pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> height = [4,2,0,3,2,5]
+<strong>Output:</strong> 9
+</pre>
+
+
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>n == height.length </code></li>
+    <li><code>1<sup></sup> &lt;= n &lt;= 2 * 10<sup>4</sup></code></li>
+    <li><code>0<sup></sup> &lt;= n &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
+
 </ul>
 
 <p>&nbsp;</p>
