@@ -109,5 +109,5 @@
 | *Representation* |
 | **Spiral Matrix** |
 | **Diagonal Sum** |
-| **Search is Sorted Matrix** <br> *Staircase Search*|
+| **Search in Sorted Matrix** <br> *Staircase Search*|
 ||
