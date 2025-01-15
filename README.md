@@ -172,3 +172,16 @@
 | **Diagonal Sum** |
 | **Search in Sorted Matrix** <br> *Staircase Search*|
 ||
+### 4. String
+|   |
+|   ------------------  |
+| **String** |
+| *Input* |
+| *Length* |
+| *Concatination* |
+| *charAt Method*<br>*str.subString(strIndx,endIndx)*<br>*str.equal(str1)* |
+| **Q1**  *Palindrom Word or not* |
+| **Q2**  *Shortest Path(E,W,N,S)* |
+| **Q3**  *Largest String{"apple","mango","banana"}* <br> *O/P:- mango*|
+| **String Builder:-**<br> *StringBuilder str = new StringBuilder("");* <br>*str.append(ch);*<br>**Example:-**<br> *Q4. "hi, i am sayan" => "Hi, I Am Sayan"* <br> *Q5. "aaabbbcc"=>""a3b3c2"*|
+||
