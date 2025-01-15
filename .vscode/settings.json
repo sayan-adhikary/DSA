@@ -1,3 +1,4 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "terminal.integrated.shellIntegration.enabled": true
 }
