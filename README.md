@@ -93,7 +93,7 @@
 <pre>
 <strong>Input:</strong> Prices = [7,1,5,3,6,4]
 <strong>Output:</strong> 5
-<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that <br>buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. 
+<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. <br>Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. 
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
