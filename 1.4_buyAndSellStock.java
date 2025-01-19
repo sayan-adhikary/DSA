@@ -1,4 +1,4 @@
-class buyAndSellStock {
+class buyAndSellStock {                                         //tc=O(n) sc=O(1)
     static void buyAndSellStock(int []prices){      //TC=O(n)
         int buyPrice = Integer.MAX_VALUE;
         int maxProfit = 0;

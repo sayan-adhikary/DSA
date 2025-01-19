@@ -1,4 +1,4 @@
-class subArraySum1 {
+class subArraySum1 {                                        //tc=O(n^3) sc=O(1)
 
     //Brute Force                                                       3type explaination are their
     public static void subArraySum1(int arr[]){

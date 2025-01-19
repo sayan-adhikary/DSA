@@ -1,4 +1,4 @@
-class subArray {
+class subArray {                                //tc=O(n^3) sc=O(1)
     static void subArray(int arr[]){
         int TN = 0;
         for (int i = 0; i < arr.length; i++) {                  //loop run till arr.length

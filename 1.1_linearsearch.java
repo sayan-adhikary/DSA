@@ -1,4 +1,4 @@
-class linearsearch {
+class linearsearch {                                        //tc=O(n) sc=O(1)
     public static int liniarshearch(int numbers[],int key){
         for (int i = 0; i < numbers.length; i++) {
             if(numbers[i] == key){

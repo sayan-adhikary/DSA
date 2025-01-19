@@ -1,4 +1,4 @@
-class pairsArray {
+class pairsArray {                              //tc=O(n^2) sc=O(1)
     static void pairsArray(int arr[]){
         int tp = 0;
         for (int i = 0; i < arr.length; i++) {
