@@ -1,4 +1,4 @@
-class diagonalSum {
+class diagonalSum {                                     
     static int diagonalSum(int[][] arr){
         int sum = 0;
         // for (int i = 0; i < arr.length; i++) {               // TC:- O(n^2)

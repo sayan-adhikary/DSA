@@ -1,4 +1,4 @@
-class spiralMatrix {
+class spiralMatrix {                                        //tc=O(n) sc=O(1)
     static void spiralMatrix(int[][] arr){
         int startRow = 0;
         int startCol = 0;

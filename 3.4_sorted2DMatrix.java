@@ -1,4 +1,4 @@
-class sorted2DMatrix {
+class sorted2DMatrix {                                      //tc=O(n) sc=O(1)
     static boolean sorted2DMatrix(int[][] arr,int key){
         int row = 0, col = arr[0].length - 1;
         while (row < arr.length && col >= 0) {
