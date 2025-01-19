@@ -1,4 +1,4 @@
-class sorting {
+class sorting {                                 //tc=O(n^2) sc=O(1)
     static void selectionSort(int[] arr){
         for (int i = 0; i < arr.length - 1; i++) {
             int minPos = i;

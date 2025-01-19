@@ -1,4 +1,4 @@
-class Sorting {
+class Sorting {                                             //tc=O(n) sc=O(n)
     static void countingSort(int[] arr){
         int largest = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {

@@ -1,4 +1,4 @@
-class sorting {
+class sorting {                                 //tc=O(n^2) sc=O(1)                            
     static void insertionSort(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             int curr = i;

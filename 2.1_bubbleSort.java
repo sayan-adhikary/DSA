@@ -1,4 +1,4 @@
-class sorting {
+class sorting {                                 //tc=O(n^2) sc=O(1)
     static void bubbleSort(int arr[]){
         for (int turns = 0; turns < arr.length-1; turns++) {
             int swap = 0;

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Collections;
 
-class inbuildSorting {
+class inbuildSorting {              //tc=O(nlogn) sc=O(1)
     public static void main(String[] args) {
         Integer arr[] = {5,3,5,2,8,9,2,1};
         Arrays.sort(arr);                                    //o/p:- 1 2 2 3 5 5 8 9 
