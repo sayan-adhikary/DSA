@@ -1,4 +1,4 @@
-class ArrayAssignement {
+class ArrayAssignement {                            //tc=O(n) sc=O(1)                           
     static int trap(int[] height) {
         int n = height.length;
 

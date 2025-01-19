@@ -1,4 +1,4 @@
-class ArrayAssignement {
+class ArrayAssignement {                            //tc=O(n) sc=O(1)   
     static int maxProfit(int[] prices) {
         if (prices == null || prices.length == 0) {
             return 0; // Handle edge case of empty or null array
