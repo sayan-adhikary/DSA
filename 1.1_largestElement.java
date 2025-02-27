@@ -12,7 +12,7 @@ class largestElement {
             }
     }
 
-    // return largest;
+    // return largest & smallest;
     System.out.println("Largest value: "+ largest);
     System.out.println("Smallest value: "+ smallest);
     }
