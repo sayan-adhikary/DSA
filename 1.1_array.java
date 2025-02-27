@@ -17,9 +17,8 @@ class array{
 
         //Passing Array using argument
         static void Update(int marks[]){
-
             for (int i = 0; i < marks.length; i++) {
-                marks[i] = marks[i] + 1;
+            marks[i] = marks[i] + 1;
             }
         }
 
