@@ -30,7 +30,4 @@ class array{
                 System.out.print(marks[i]+" ");
             }
         }
-
-        
-
     }
