@@ -26,7 +26,7 @@ class Palindrome {                                      //Both methods TC: O(n) 
         return true;                                    // If the loop completes, it's a palindrome
     }
     public static void main(String[] args) {                // Main method
-        String str = "amltma";  // You can change the string for testing
+        String str = "amllma";  // You can change the string for testing
         // checkPalindrome(str);
         System.out.println(palindrome(str));        // Function call
     }
