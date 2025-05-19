@@ -187,14 +187,15 @@
 ||
 ### 5. Bit Manipulation
 |   |
-| ----------------------------- |
+| ----------------------------- |       
 | **Binary Number**             |       |
 | **Bitwise AND (&)**           |       |
-| \*\*Bitwise OR (              | )\*\* |
+| **Bitwise OR ( \| )**           |       |
 | **Bitwise XOR (^)**           |       |
-| **Bitwise NOT (\~)**          |       |
+| **Bitwise NOT (~)**          |       |
 | **Left Shift (<<)**           |       |
 | **Right Shift (>>)**          |       |
+| **Getting i'th Bit**             |       |
 | **Setting a Bit**             |       |
 | **Clearing a Bit**            |       |
 | **Toggling a Bit**            |       |
