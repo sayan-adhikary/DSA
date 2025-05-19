@@ -9,7 +9,7 @@ class evenOdd {
     }
     public static void main(String[] args) {
         printNumber(8); 
-        printNumber(81); 
+        printNumber(1); 
         printNumber(5); 
         printNumber(3); 
     }
