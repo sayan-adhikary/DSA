@@ -185,3 +185,6 @@
 | **Q3**  *Largest String{"apple","mango","banana"}* <br> *O/P:- mango*|
 | **String Builder:-**<br> *StringBuilder str = new StringBuilder("");* <br>*str.append(ch);*<br>**Example:-**<br> *Q4. "hi, i am sayan" => "Hi, I Am Sayan"* <br> *Q5. "aaabbbcc"=>""a3b3c2"*|
 ||
+### 5. Bit Manipulation
+|   |
+|   -----------------------|
