@@ -13,7 +13,7 @@ class Questions {
         return count;
     }
 
-    public static int fastExponentiation(int a, int n){
+    public static int fastExponentiation(int a, int n){  //tc = O(log n) sc = O(1)
         int ans = 1;
         while(n > 0){
             if((n & 1) == 1){
