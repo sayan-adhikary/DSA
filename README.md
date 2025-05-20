@@ -198,7 +198,6 @@
 | **Getting i'th Bit**             |       |
 | **Setting a Bit**             |       |
 | **Clearing a Bit**            |       |
-| **Toggling a Bit**            |       |
 | **Checking a Bit**            |       |
 | **Counting Set Bits**         |       |
 | **Binary Masks**              |       |
