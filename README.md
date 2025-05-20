@@ -202,5 +202,6 @@
 | **Counting Set Bits**         |       |
 | **Binary Masks**              |       |
 | **Fast Exponentation**              |       |
-| **Example :-**  <br> *5.1 Check odd or even* <br> *5.2 Check if a number is a power of **2** or not* <br> *5.3 Counting SetBits in a number* |        |
+| **Example :-**  <br> *5.1 Check odd or even* <br> *5.2 Check if a number is a power of **2** or not* <br> *5.3 Counting SetBits in a number* ||
+||
 
