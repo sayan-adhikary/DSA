@@ -1,4 +1,4 @@
-public class OOPS{
+class OOPS{
     public static void main(String[] args) {
         pen p1 = new pen(); // Creating an object of pen class called p1
         p1.setColor("Blue"); // Setting color of pen
