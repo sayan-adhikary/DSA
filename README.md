@@ -213,3 +213,7 @@
 | **CopyConstractor** |
 | **Inheritance** |
 | **Method Overloading** |
+| **Abstraction** |
+| **Interface** |
+| **Static Key** |
+| **Super Key** |
