@@ -217,3 +217,9 @@
 | **Interface** |
 | **Static Key** |
 | **Super Key** |
+||
+### 7. Recursion
+|   |
+| ----------------------------- |       
+| **Iteration & Function** |
+| **Call Stack** <br>*code : -* <br> *7.1 N to 1 Decreasing order* <br> *7.2 1 to N Increasing order*||
