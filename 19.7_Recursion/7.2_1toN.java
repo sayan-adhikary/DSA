@@ -7,7 +7,17 @@ class print{
         System.out.print(m +" ");
          printIncrese(n,m+1);
     }
+
+    public static void printInc(int n){         //new Idea
+        if(n == 1){
+            System.out.print(n+" ");
+            return;
+        }
+        printInc(n-1);
+        System.out.print(n+" ");
+    }
     public static void main(String[] args) {
-         printIncrese(100,1);
+        //  printIncrese(100,1);
+        printInc(10);
     }
 }
