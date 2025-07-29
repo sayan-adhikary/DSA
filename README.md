@@ -222,4 +222,6 @@
 |   |
 | ----------------------------- |       
 | **Iteration & Function** |
-| **Call Stack** <br>*code : -* <br> *7.1 N to 1 Decreasing order* <br> *7.2 1 to N Increasing order*||
+| **Call Stack** |
+|**Example : -**
+**7.1_n to 1 Decreasing order<br>7.2_1 to N Increasing order<br>7.3_Factorial.java<br>7.4_nSum.java<br>7.5_fibSerise.java<br>7.6_sorted.java<br>7.7_FirstNth.java<br>7.8_LastNth.java<br>7.9_power.java<br>7.10_optiPower.java<br>7.11_tilingProb.java<br>7.12_removeDuplicate.java<br>7.13_friendPair.java<br>7.14_BinaString.java**
