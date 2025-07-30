@@ -7,8 +7,8 @@ class MergeSort {
     }
 
     public static void margeSort(int arr[], int si, int ei) {
-        // base case
-        if (si >= ei) {
+
+        if (si >= ei) { // base case
             return;
         }
 
@@ -20,7 +20,7 @@ class MergeSort {
     }
 
     public static void merge(int arr[], int si, int mid, int ei) {
-        int temp[] = new int[ei - si + 1]; // left(0,3)=4 right(4,6)=3 -> idx=6-0+1=7
+        int temp[] = new int[ei - si + 1]; // left(0,3)=4 right(4,6)=3 -> idx=6-0+1=7(size of the array)
         int i = si; // iterator for left part
         int j = mid + 1; // iterator for right part
         int k = 0; // iterator for temp arr
