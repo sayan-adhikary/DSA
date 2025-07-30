@@ -38,8 +38,8 @@ class rotatedSortedArray {
 
     public static void main(String[] args) {
         int arr[] = { 4, 5, 6, 7, 0, 1, 2 };
-        int target = 0;
-        int targetIdx = search(arr, 0, 0, arr.length - 1);
+        int target = 6;
+        int targetIdx = search(arr, target, 0, arr.length - 1);
         System.out.println(targetIdx);
     }
 }
