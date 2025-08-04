@@ -1,4 +1,4 @@
-public class basic {
+class basic {
     public static void changeArr(int arr[], int i, int val) {
         // base case
         if (i == arr.length) {
