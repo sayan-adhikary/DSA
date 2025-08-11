@@ -1,5 +1,4 @@
-class GridWays {
-
+class GridWaysTCn {
     // Main function to calculate number of ways from (i, j) to (n-1, m-1)
     public static int gridWays(int i, int j, int n, int m) {
         int down = n - i - 1;  // number of down moves needed
@@ -7,6 +6,7 @@ class GridWays {
         if (down < 0 || right < 0) return 0;
         return (int) nCr(down + right, down);
     }
+    
     // Function to calculate nCr (combinations) efficiently using multiplicative formula
     public static long nCr(int n, int r) {
         if (r > n - r) {
