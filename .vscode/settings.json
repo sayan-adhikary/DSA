@@ -1,4 +1,16 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
-    "terminal.integrated.shellIntegration.enabled": true
+    "terminal.integrated.shellIntegration.enabled": true,
+    "java.project.sourcePaths": [
+        "21.9_BackTracking",
+        "20.8_DIvide & Conquer",
+        "19.7_Recursion",
+        "18.6_OOPS",
+        "17.5_Bit Manipulation",
+        "16.4_String",
+        "15.3_2D_Array",
+        "14.2_Sorting",
+        "13.1_Array",
+        "22.19_Array List"
+    ]
 }
