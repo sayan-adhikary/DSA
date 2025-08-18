@@ -30,5 +30,8 @@ class arrayList {
         // contains
         System.out.println(list.contains(1));
         System.out.println(list.contains(11));
+
+        //size
+        System.out.println(list.size());
     }
 }
