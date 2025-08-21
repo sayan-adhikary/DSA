@@ -1,227 +1,163 @@
-# DSA in JAVA
+# 🚀 Data Structures & Algorithms in Java  
 
-## Topics
-### 1. Array
-|  |
-| ------- |
-| **Operation (Create,Input,Output,Update)** |
+This repository contains my **DSA journey in Java**, including theory, solved problems, and implementation of various concepts.  
+I’ve organized everything into modules for easy navigation.  
+
+---
+
+## 📌 Table of Contents  
+- [Array](#-array)  
+- [Sorting](#-sorting)  
+- [2D Array](#-2d-array)  
+- [String](#-string)  
+- [Bit Manipulation](#-bit-manipulation)  
+- [OOPs Concept](#-oops-concept)  
+- [Recursion](#-recursion)  
+- [Divide & Conquer](#-divide--conquer)  
+- [Backtracking](#-backtracking)  
+- [ArrayList](#-arraylist)  
+
+---
+
+## 🔹 Array  
+| Topics |
+|--------|
+| **Basic Operations (Create, Input, Output, Update)** |
 | **Linear Search** |
 | **Largest Number** |
 | **Binary Search** |
-| **Reverce An Array** |
-| **Pairs in An Array** |
+| **Reverse an Array** |
+| **Pairs in an Array** |
 | **Print SubArray** |
-| **MaxSum SubArray(Brute Force),(Prefix Sum),(Kadane's Algorithm)** |
-| **Rain trapped water** |
-| **Buy And Sell Stock** |
-|  |
- ### ARRAY - Assignment 
+| **Max Sum SubArray → (Brute Force, Prefix Sum, Kadane's Algorithm)** |
+| **Trapping Rain Water** |
+| **Buy & Sell Stock** |
 
-**1.5.1_Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.** 
-**<p>Simple to understand - just sort and check neighbors Uses O(1) extra space Has O(n log n) time complexity due to sorting</p>**
-<p><strong class="example">Example 1:</strong></p>
+### 📘 Assignments  
+**1.5.1 Contains Duplicate**  
+- Sort and check neighbors → `O(n log n)` time, `O(1)` space.  
+- ✅ Examples included  
 
-<pre>
-<strong>Input:</strong> nums = [1, 2, 3, 1]
-<strong>Output:</strong> true
-</pre>
+**1.5.2 Search in Rotated Sorted Array**  
+- Binary Search approach → `O(log n)`  
 
-<p><strong class="example">Example 2:</strong></p>
+**1.5.3 Best Time to Buy & Sell Stock**  
+- Max profit calculation  
 
-<pre>
-<strong>Input:</strong> nums = [1, 2, 3, 4]
-<strong>Output:</strong> false
-</pre>
+**1.5.4 Trapping Rain Water**  
+- Two pointer / prefix max methods  
 
-<p><strong class="example">Example 3:</strong></p>
+---
 
-<pre>
-<strong>Input:</strong> nums = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2] 
-<strong>Output:</strong> true
-</pre>
+## 🔹 Sorting  
+| Type | Description |
+|------|-------------|
+| **Bubble Sort** | Basic comparison-based sorting |
+| **Selection Sort** | Picks minimum each iteration |
+| **Insertion Sort** | Shifts elements until sorted |
+| **Counting Sort** | Non-comparison sorting |
+| **Inbuilt Sorting** | `Arrays.sort(arr)`, `Collections.reverseOrder()` |
 
-<p><strong>Constraints:</strong></p>
+⏱ Time Complexity: `O(n log n)` (inbuilt sort)  
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-    <li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-</ul>
+---
 
-<p>&nbsp;</p>
+## 🔹 2D Array  
+- Representation  
+- Example Programs  
+- **Spiral Matrix**  
+- **Diagonal Sum**  
+- **Search in Sorted Matrix (Staircase Search)**  
 
-**1.5.2_There is an integer array nums sorted in ascending order (with distinct values).Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed).**
-**For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].**
-**Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.**
-**<p>Time Complexity: O(log n) Space Complexity: O(1)runtime complexity.</p>**
-<p><strong class="example">Example 1:</strong></p>
+---
 
-<pre>
-<strong>Input:</strong> nums = [4, 5, 6, 7, 0, 1, 2],target=0
-<strong>Output:</strong> 4
-</pre>
-<p><strong class="example">Example 2:</strong></p>
+## 🔹 String  
+- Input, Length, Concatenation  
+- `charAt()`, `substring()`, `equals()`  
+- **Q1:** Palindrome check  
+- **Q2:** Shortest Path (N, S, E, W)  
+- **Q3:** Largest String (`"apple", "mango", "banana"` → Output: `"mango"`)  
+- **Q4:** Convert to Title Case → `"hi, i am sayan"` → `"Hi, I Am Sayan"`  
+- **Q5:** Character Compression → `"aaabbbcc"` → `"a3b3c2"`  
 
-<pre>
-<strong>Input:</strong> nums = [4, 5, 6, 7, 0, 1, 2],target=3
-<strong>Output:</strong> -1
-</pre>
-<p><strong class="example">Example 1:</strong></p>
+🔹 Using **StringBuilder** for efficient modifications.  
 
-<pre>
-<strong>Input:</strong> nums = [1],target=3
-<strong>Output:</strong> -1
-</pre>
+---
 
-<p><strong>Constraints:</strong></p>
+## 🔹 Bit Manipulation  
+- **Bitwise Operators:** `&, |, ^, ~, <<, >>`  
+- **Get, Set, Clear, Check i-th Bit**  
+- **Count Set Bits**  
+- **Binary Masks**  
+- **Fast Exponentiation**  
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 5000</code></li>
-    <li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
-    <li>All values of nums are unique.</li>
-    <li>nums is an ascending array that is possibly rotated.</li>
-        <li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
+💡 **Examples:**  
+1. Check odd/even  
+2. Check if a number is power of 2  
+3. Count set bits in a number  
 
-</ul>
+---
 
-<p>&nbsp;</p>
+## 🔹 OOPs Concept  
+- Classes & Objects  
+- Getters & Setters  
+- Constructors & Copy Constructors  
+- Inheritance  
+- Method Overloading  
+- Abstraction & Interfaces  
+- `static` & `super` keywords  
 
-**1.5.3_You are given an array prices where prices[i] is the price of a given stock on the ith day.** 
-**<p>Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.</p>**
+---
 
-<p><strong class="example">Example 1:</strong></p>
+## 🔹 Recursion  
+- Iteration & Function Basics  
+- Call Stack working  
 
-<pre>
-<strong>Input:</strong> Prices = [7,1,5,3,6,4]
-<strong>Output:</strong> 5
-<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. <br>Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. 
-</pre>
+**Examples:**  
+1. `n → 1` (Decreasing Order)  
+2. `1 → n` (Increasing Order)  
+3. Factorial  
+4. Sum of n natural numbers  
+5. Fibonacci Series  
+6. Check if Array is Sorted  
+7. First Occurrence of Element  
+8. Last Occurrence of Element  
+9. Power Function  
+10. Optimized Power  
+11. Tiling Problem  
+12. Remove Duplicates  
+13. Friends Pairing Problem  
+14. Binary Strings without consecutive 1’s  
 
-<p><strong class="example">Example 2:</strong></p>
+---
 
-<pre>
-<strong>Input:</strong> nums = [7,6,4,3,1]
-<strong>Output:</strong> 0
-<strong></strong> In this case, no transactions are done and the max profit = 0. 
-</pre>
+## 🔹 Divide & Conquer  
+- **8.1 Merge Sort**  
+- **8.2 Quick Sort**  
+- **8.3 Search in Rotated Sorted Array**  
 
+---
 
-<p><strong>Constraints:</strong></p>
+## 🔹 Backtracking  
+- **9.1 Basics**  
+- **9.2 Find Subsets**  
+- **9.3 Find Permutations**  
+- **9.4 N-Queen Problem**  
+- **9.5 Grid Ways**  
+- **9.6 Grid Ways with Constraints**  
+- **9.7 Sudoku Solver**  
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-    <li><code>0<sup></sup> &lt;= Prices[i] &lt;= 10<sup>4</sup></code></li>
-</ul>
+---
 
-<p>&nbsp;</p>
+## 🔹 ArrayList  
+- **10.1 ArrayList Basics**  
+- **10.2 Reverse an ArrayList**  
+- **10.3 Find Max in ArrayList**  
+- **10.4 Swap Elements**  
+- **10.5 Sort ArrayList**  
+- **10.6 Multidimensional ArrayList**  
 
-**1.5.4_Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.** 
+---
 
-
-<p><strong class="example">Example 1:</strong></p>
-
-<pre>
-<strong>Input:</strong> height = [0,1,0,2,1,0,1,3,2,1,2,1]
-<strong>Output:</strong> 6
-<strong>Explanation:</strong> The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1].<br>In this case, 6 units of rain water (blue section) are being trapped. 
-</pre>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<pre>
-<strong>Input:</strong> height = [4,2,0,3,2,5]
-<strong>Output:</strong> 9
-</pre>
-
-
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>n == height.length </code></li>
-    <li><code>1<sup></sup> &lt;= n &lt;= 2 * 10<sup>4</sup></code></li>
-    <li><code>0<sup></sup> &lt;= n &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
-
-</ul>
-
-<p>&nbsp;</p>
-
-
-### 2. Sorting
-|  |
-| ------- |
-| **Basic Algoritham** |
-| |
-| **Bubble Sort** |
-| **Selection Sort** |
-| **Insertion Sort** |
-| **Counting Sort** |
-
-|   |
-| ------------ |
-| **Inbuild Sorting** |
-| *Accending Order* :- **Arrays.sort(arr);** **Arrays.sort(arr,0,3);**|
-| *Decending Order* :- **Arrays.sort(arr,Collections.reverseOrder());** **Arrays.sort(arr,0,3,Collections.reverseOrder());**|
-|*TC* :- $O(n \log n)$|
-||
-### 3. 2D Array
-|   |
-|   ------------------  |
-| **2D Array** |
-| *Example* |
-| *Representation* |
-| **Spiral Matrix** |
-| **Diagonal Sum** |
-| **Search in Sorted Matrix** <br> *Staircase Search*|
-||
-### 4. String
-|   |
-|   ------------------  |
-| **String** |
-| *Input* |
-| *Length* |
-| *Concatination* |
-| *charAt Method*<br>*str.subString(strIndx,endIndx)*<br>*str.equal(str1)* |
-| **Q1**  *Palindrom Word or not* |
-| **Q2**  *Shortest Path(E,W,N,S)* |
-| **Q3**  *Largest String{"apple","mango","banana"}* <br> *O/P:- mango*|
-| **String Builder:-**<br> *StringBuilder str = new StringBuilder("");* <br>*str.append(ch);*<br>**Example:-**<br> *Q4. "hi, i am sayan" => "Hi, I Am Sayan"* <br> *Q5. "aaabbbcc"=>""a3b3c2"*|
-||
-### 5. Bit Manipulation
-|   |
-| ----------------------------- |       
-| **Binary Number**             |       |
-| **Bitwise AND (&)**           |       |
-| **Bitwise OR ( \| )**         |       |
-| **Bitwise XOR (^)**           |       |
-| **Bitwise NOT (~)**           |       |
-| **Left Shift (<<)**           |       |
-| **Right Shift (>>)**          |       |
-| **Getting i'th Bit**          |       |
-| **Setting a Bit**             |       |
-| **Clearing a Bit**            |       |
-| **Checking a Bit**            |       |
-| **Counting Set Bits**         |       |
-| **Binary Masks**              |       |
-| **Fast Exponentation**        |       |
-| **Example :-**  <br> *5.1 Check odd or even* <br> *5.2 Check if a number is a power of **2** or not* <br> *5.3 Counting SetBits in a number* ||
-||
-### 6. OOPS Concept
-|   |
-| ----------------------------- |       
-| **Oops Concept** |
-| **GetSet** |
-| **Constractor** |
-| **CopyConstractor** |
-| **Inheritance** |
-| **Method Overloading** |
-| **Abstraction** |
-| **Interface** |
-| **Static Key** |
-| **Super Key** |
-||
-### 7. Recursion
-|   |
-| ----------------------------- |       
-| **Iteration & Function** |
-| **Call Stack** |
-|**Example : -**
-**7.1_n to 1 Decreasing order<br>7.2_1 to N Increasing order<br>7.3_Factorial.java<br>7.4_nSum.java<br>7.5_fibSerise.java<br>7.6_sorted.java<br>7.7_FirstNth.java<br>7.8_LastNth.java<br>7.9_power.java<br>7.10_optiPower.java<br>7.11_tilingProb.java<br>7.12_removeDuplicate.java<br>7.13_friendPair.java<br>7.14_BinaString.java**
+✨ **This repo is continuously updated as I progress through my DSA journey.**  
+💡 Contributions, suggestions, and optimizations are welcome!  
