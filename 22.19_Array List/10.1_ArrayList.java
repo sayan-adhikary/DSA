@@ -13,25 +13,25 @@ class arrayList {
         list.add(4);
         list.add(5);
 
-        list.add(2, 6);
-        System.out.println("Adding element:- " + list);
+        // list.add(2, 6);
+        // System.out.println("Adding element:- " + list);
 
-        // get element:- O(1)
-        System.out.println("Getting Element:- " + list.get(2));
+        // // get element:- O(1)
+        // System.out.println("Getting Element:- " + list.get(1));
 
         // remove element
-        list.remove(2);
-        System.out.println(list);
+        // list.remove(2);
+        // System.out.println(list);
 
         // set
-        list.set(2, 10);
-        System.out.println(list);
+        // list.set(2, 10);
+        // System.out.println(list);
 
         // contains
-        System.out.println(list.contains(1));
-        System.out.println(list.contains(11));
+        // System.out.println(list.contains(1));
+        // System.out.println(list.contains(11));
 
-        //size
+        // //size
         System.out.println(list.size());
     }
 }

@@ -9,17 +9,17 @@ class ALsort {
         list.add(9);
         list.add(4);
 
-        System.out.println(list);
+        // System.out.println(list);
 
-        Collections.sort(list);
+        // Collections.sort(list); //accending order
 
-        System.out.println(list);
+        // System.out.println(list);
 
-        Collections.sort(list,Collections.reverseOrder());
+        // Collections.sort(list,Collections.reverseOrder());  //decending order
 
-        System.out.println(list);
+        // System.out.println(list);
 
         Collections.reverse(list);
-        System.err.println(list);
+        System.err.println(list);       //he method System.err.println() is similar to System.out.println()
     }
 }
