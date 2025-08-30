@@ -45,6 +45,6 @@ class pareSum1 {
         height.add(7);
         height.add(8);
         height.add(9);
-        System.out.println(sum1(height, 5   0));
+        System.out.println(sum1(height, 5));
     }
 }
