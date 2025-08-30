@@ -52,7 +52,7 @@ class Container_With_Rain_Water {
         height.add(8);
         height.add(3);
         height.add(7);
-        System.out.println(storeWater(height));
-        System.out.println(storedWater(height));
+        System.out.println(storeWater(height));     //O(n^2)
+        System.out.println(storedWater(height));   //O(n)
     }
 }
