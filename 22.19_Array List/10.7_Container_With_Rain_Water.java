@@ -1,11 +1,13 @@
 import java.util.*;
+
 class Container_With_Rain_Water {
-    
-    static int storeWater(ArrayList<Integer> List){
+
+    // Brute Force
+    static int storeWater(ArrayList<Integer> List) {
         int maxWater = 0;
         for (int i = 0; i < List.size(); i++) {
-            for (int j = i+1; j < List.size(); j++) {
-                int width = j-i;
+            for (int j = i + 1; j < List.size(); j++) {
+                int width = j - i;
                 int height = Math.min(List.get(i), List.get(j));
                 int currWater = width * height;
                 maxWater = Math.max(maxWater, currWater);
@@ -14,8 +16,32 @@ class Container_With_Rain_Water {
         return maxWater;
     }
 
+    // Optimized Two pointer
+    static int storedWater(ArrayList<Integer> List) {
+        int maxWater = 0;
+        int lp = 0;
+        int rp = List.size() - 1;
+        while (lp < rp) {
+
+            // calculate maxWater
+            int height = Math.min(List.get(lp), List.get(rp));
+            int wigth = rp - lp;
+            int currWater = height * wigth;
+            maxWater = Math.max(maxWater, currWater);
+
+            // update the value
+            if (List.get(lp) < List.get(rp)) {
+                lp++;
+            } else {
+                rp--;
+            }
+        }
+        return maxWater;
+    }
+
     public static void main(String[] args) {
-        // List<Integer> height = new ArrayList<>(Arrays.asList(1, 8, 6, 2, 5, 4, 8, 3, 7));
+        // List<Integer> height = new ArrayList<>(Arrays.asList(1, 8, 6, 2, 5, 4, 8, 3,
+        // 7));
         ArrayList<Integer> height = new ArrayList<>();
         height.add(1);
         height.add(8);
@@ -27,5 +53,6 @@ class Container_With_Rain_Water {
         height.add(3);
         height.add(7);
         System.out.println(storeWater(height));
+        System.out.println(storedWater(height));
     }
 }
