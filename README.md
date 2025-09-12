@@ -16,6 +16,7 @@ I’ve organized everything into modules for easy navigation.
 - [Divide & Conquer](#-divide--conquer)  
 - [Backtracking](#-backtracking)  
 - [ArrayList](#-arraylist)  
+- [LinkedList](#-linkedlist)  
 
 ---
 
@@ -157,6 +158,8 @@ I’ve organized everything into modules for easy navigation.
 - **10.5 Sort ArrayList**  
 - **10.6 Multidimensional ArrayList**  
 
+---
+## 🔹LinkedList
 ---
 
 ✨ **This repo is continuously updated as I progress through my DSA journey.**  
