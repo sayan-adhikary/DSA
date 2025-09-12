@@ -159,7 +159,33 @@ I’ve organized everything into modules for easy navigation.
 - **10.6 Multidimensional ArrayList**  
 
 ---
-## 🔹LinkedList
+
+## 🔹 LinkedList  
+Here are the key learning points from this code:
+
+1. **How to create a Linked List in Java using a nested `Node` class.**  
+2. **Implementing basic Linked List operations:**  
+   - `addFirst()`: Add node at the beginning.  
+   - `addLast()`: Add node at the end.  
+   - `add(idx, data)`: Add node at a specific index.  
+3. **Removing nodes:**  
+   - `removeFirst()`: Remove node from the beginning.  
+   - `removeLast()`: Remove node from the end.  
+4. **Searching elements:**  
+   - Iterative search (`itrSearch`)  
+   - Recursive search (`recSearch` with helper)  
+5. **Reversing the Linked List.**  
+6. **Deleting the N-th node from the end of the list.**  
+7. **Finding the middle node using slow-fast pointer approach.**  
+8. **Checking if the Linked List is a palindrome.**  
+9. **Maintaining `head`, `tail`, and `size` for efficient operations.**  
+10. **Understanding traversal and node manipulation (`next` references).**  
+11. **Encapsulation and static inner class usage in Java.**  
+12. **Handling edge cases (empty list, single-node list).**  
+13. **Using helper methods to organize code and avoid duplication.**  
+14. **Understanding time complexity of each operation (mostly O(n)).**  
+15. **Good practice of printing list (`print()` method) for debugging.**  
+
 ---
 
 ✨ **This repo is continuously updated as I progress through my DSA journey.**  
