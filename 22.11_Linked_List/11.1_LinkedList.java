@@ -229,9 +229,23 @@ class LinkedList {
         }
         System.out.println("Null");
     }
+    
+    public static boolean isCycle(){
+        Node fast = head;
+        Node slow = head;
+
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast)
+            return true;
+        }
+
+        return false;
+    }
 
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
+        // LinkedList ll = new LinkedList();
         // ll.print();
         // ll.addFirst(2);
         // ll.print();
@@ -259,11 +273,18 @@ class LinkedList {
         // ll.deleteNthfromEnd(2);
         // ll.print();
 
-        ll.addLast(1);
+        // ll.addLast(1);
         // ll.addLast(2);
-        ll.addLast(2);
-        ll.addLast(1);
-        ll.print();
-        System.out.println(ll.checkPelendrom());
+        // ll.addLast(2);
+        // ll.addLast(1);
+        // ll.print();
+        // System.out.println(ll.checkPelendrom());
+
+
+        head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(3);
+        head.next.next.next = head;
+        System.out.println(isCycle());
     }
 }

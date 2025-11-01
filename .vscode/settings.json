@@ -2,6 +2,7 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "terminal.integrated.shellIntegration.enabled": true,
     "java.project.sourcePaths": [
+        "22.20_Linked_List",
         "22.19_Array List",
         "21.9_BackTracking",
         "20.8_DIvide & Conquer",
@@ -12,6 +13,6 @@
         "15.3_2D_Array",
         "14.2_Sorting",
         "13.1_Array",
-        "22.20_Linked_List"
+        "24.12_Linked_List"
     ]
 }
