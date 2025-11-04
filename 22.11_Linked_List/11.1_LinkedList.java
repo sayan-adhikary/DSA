@@ -1,4 +1,4 @@
-class LinkedList {
+class myLinkedList {
     public static class Node {
         int data;
         Node next;
