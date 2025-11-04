@@ -146,7 +146,7 @@ class LinkedList {
         head = prev;
     }
 
-    public void deleteNthfromEnd(int n) {       //Delete the N-th Node from the End O(n)
+    public void deleteNthfromEnd(int n) { // Delete the N-th Node from the End O(n)
         // calculate size
         int sz = 0;
         Node temp = head;
@@ -155,13 +155,13 @@ class LinkedList {
             temp = temp.next;
             sz++;
         }
-        //Step 2: Check if n == sz
+        // Step 2: Check if n == sz
         if (n == sz) {
             head = head.next; // removeFirst
             return;
         }
 
-        //Step 3: Find node before the one to delete [sz-n]
+        // Step 3: Find node before the one to delete [sz-n]
         int i = 1;
         int iToFind = sz - n;
         Node prev = head;
@@ -169,31 +169,32 @@ class LinkedList {
             prev = prev.next;
             i++;
         }
-        prev.next = prev.next.next; //if prev = B  prev.next = C   prev.next.next = D  [prev.next = prev.next.next; // B.next = D]
+        prev.next = prev.next.next; // if prev = B prev.next = C prev.next.next = D [prev.next = prev.next.next; //
+                                    // B.next = D]
         return;
     }
 
-    //slow-fast approach
-    public Node findMid(Node head){
+    // slow-fast approach
+    public Node findMid(Node head) {
         Node slow = head;
         Node fast = head;
 
-        while(fast != null && fast.next != null){
-            slow = slow.next;   //+1
-            fast = fast.next;   //+2
+        while (fast != null && fast.next != null) {
+            slow = slow.next; // +1
+            fast = fast.next; // +2
         }
         return slow;
     }
 
-    //CheckPelendrom or not
-    public boolean checkPelendrom(){
+    // CheckPelendrom or not
+    public boolean checkPelendrom() {
         if (head == null || head.next == null) {
             return true;
         }
-        //step1: find mid
+        // step1: find mid
         Node midNode = findMid(head);
 
-        //step2: reverse 2nd half
+        // step2: reverse 2nd half
         Node prev = null;
         Node curr = midNode;
         Node next;
@@ -203,12 +204,12 @@ class LinkedList {
             prev = curr;
             curr = next;
         }
-        Node right = prev;  //right half head
+        Node right = prev; // right half head
         Node left = head;
 
-        //step3: check left half and right half
-        while(right != null){
-            if(left.data != right.data){
+        // step3: check left half and right half
+        while (right != null) {
+            if (left.data != right.data) {
                 return false;
             }
             left = left.next;
@@ -229,16 +230,16 @@ class LinkedList {
         }
         System.out.println("Null");
     }
-    
-    public static boolean isCycle(){
+
+    public static boolean isCycle() {   //ll is cycle or not
         Node fast = head;
         Node slow = head;
 
-        while(fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
-            if(slow == fast)
-            return true;
+            if (slow == fast)
+                return true;
         }
 
         return false;
@@ -279,7 +280,6 @@ class LinkedList {
         // ll.addLast(1);
         // ll.print();
         // System.out.println(ll.checkPelendrom());
-
 
         head = new Node(1);
         head.next = new Node(2);
