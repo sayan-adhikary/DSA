@@ -1,4 +1,4 @@
-public class DoubleLL {
+class DoubleLL {
         public static class Node {
         int data;
         Node next;

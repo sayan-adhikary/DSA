@@ -160,10 +160,8 @@ All topics are structured module-wise for better readability and practical learn
 
 ## 🔹 Linked List  
 ### Files  
-- cycle.java  
-- mergeLL.java  
-- MergeLLFramework.java  
-- zigzagLL.java  
+- **11.1 LinkedList.java**  
+- **12.1 cycle.java**
 
 ### Key Learning Points  
 1. Creating a Linked List in Java using a nested `Node` class.  
@@ -193,7 +191,10 @@ All topics are structured module-wise for better readability and practical learn
 
 ## 🔹 Double Linked List  
 ### Files  
-- DoubleLL.java  
+- **12.2 DoubleLL.java**  
+- **12.3 mergeLL.java**
+- **12.4 MergeLLFramework.java**
+- **12.5 zigzagLL.java**
 
 ### Key Learning Points  
 1. Creating a Doubly Linked List with `prev` and `next` references.  

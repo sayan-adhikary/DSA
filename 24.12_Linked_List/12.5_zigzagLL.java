@@ -1,4 +1,4 @@
-public class zigzagLL {
+class zigzagLL {
     public static class Node {
         int data;
         Node next;

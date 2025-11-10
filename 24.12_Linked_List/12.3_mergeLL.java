@@ -8,7 +8,7 @@ class Node {
     }
 }
 
-public class mergeLL {              //TC -O(nlogn)
+class mergeLL {              //TC -O(nlogn)
     public Node head;
 
     public Node getMid(Node head) {

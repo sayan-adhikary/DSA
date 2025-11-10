@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MergeLLFramework {
+class MergeLLFramework {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // Input
         System.out.print("Enter number of elements: ");

@@ -1,4 +1,4 @@
-public class cycle {
+class cycle {
     public static class Node {
         int data;
         Node next;
