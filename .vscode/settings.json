@@ -3,6 +3,7 @@
     "terminal.integrated.shellIntegration.enabled": true,
     "java.project.sourcePaths": [
         "24.12_Linked_List",
+        "22.11_Linked_List",
         "21.9_BackTracking",
         "20.8_DIvide & Conquer",
         "19.7_Recursion",
@@ -12,6 +13,6 @@
         "15.3_2D_Array",
         "14.2_Sorting",
         "13.1_Array",
-        "22.11_Linked_List"
+        "25.13_Stack"
     ]
 }
