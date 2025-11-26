@@ -6,7 +6,7 @@ class pushBottom {
             s.push(data);
             return;
         }
-        int top = s.pop();
+        int top = s.pop();  //3,2,1
         pushAtBottom(s, data);
         s.push(top);
     }
