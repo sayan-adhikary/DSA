@@ -11,6 +11,9 @@ class reverseStack {        //Bottom wala push
     }
 
     public static void reverseStack(Stack<Integer> s){
+        if (s.isEmpty()) {
+            return;
+        }
         int top = s.pop();
         reverseStack(s);
         pushAtBottom(s, top);
@@ -28,7 +31,6 @@ class reverseStack {        //Bottom wala push
         s.push(2);
         s.push(3);
         
-        // printStack(s);
         reverseStack(s);
         printStack(s);
     }
