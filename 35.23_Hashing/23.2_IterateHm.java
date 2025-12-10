@@ -9,6 +9,7 @@ class IterateHm {
         hm.put("America", 20);
 
         //iterate
+        //hm.entrySet()
         Set<String> keys = hm.keySet();
         System.out.println(keys);
         for (String str : keys) {
