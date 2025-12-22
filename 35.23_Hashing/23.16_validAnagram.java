@@ -2,11 +2,17 @@ import java.util.*;
 
 class validAnagram {
     public static boolean valid(String s, String t) {
+
+        if (s.length()!=t.length()) {
+            return false;
+        }
+
         HashMap<Character, Integer> hm = new HashMap<>();
 
         // string s
         for (int i = 0; i < s.length(); i++) {
-            hm.put(s.charAt(i), hm.getOrDefault(s.charAt(i), 0) + 1);
+            char key = s.charAt(i);
+            hm.put(key, hm.getOrDefault(key, 0) + 1);
         }
 
         // string t
@@ -22,12 +28,12 @@ class validAnagram {
                 return false;
             }
         }
-        return hm.isEmpty();
+        return hm.isEmpty();    //TC-O(n)
     }
 
     public static void main(String[] args) {
         String str1 = "RACE";
-        String str2 = "CARE";
+        String str2 = "RACE";
         System.out.println(valid(str1, str2));
     }
 }
