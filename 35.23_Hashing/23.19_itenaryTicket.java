@@ -22,7 +22,7 @@ class itenaryTicket {
         return null;
     }
 
-    public static void ticket(Map<String, String> tickets){
+    public static void ticket(Map<String, String> tickets){     //TC-O(n)
         String start = startingP(tickets);
         System.out.print(start);
         for (String key : tickets.keySet()) {
@@ -38,6 +38,6 @@ class itenaryTicket {
         tickets.put("Mumbai", "Delhi");
         tickets.put("Goa", "Chennai");
         tickets.put("Delhi", "Goa");
-        ticket(tickets);
+        ticket(tickets);    
     }
 }
