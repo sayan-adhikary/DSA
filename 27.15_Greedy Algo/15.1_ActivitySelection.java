@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 class ActivitySelection {
-    public static void activitySelect(int[] start, int[] end){
+    public static void activitySelect(int[] start, int[] end){      //TC-O(n)
 
         //end time basis sorted
         int maxAct = 0;
