@@ -1,18 +1,15 @@
 import java.util.*;
+
 class ActivitySelectionUnsort {
-    
-    public static void main(String[] args) {
 
-        int start[] = {1, 3, 0, 5, 8, 5};
-        int end[]   = {2, 4, 6, 7, 9, 9};
-
+    public static void activitiesUnsort(int[] start, int[] end) {
         // Structure: [ index, start, end ]
         int activities[][] = new int[start.length][3];
 
         for (int i = 0; i < start.length; i++) {
-            activities[i][0] = i;        // index
+            activities[i][0] = i; // index
             activities[i][1] = start[i]; // start time
-            activities[i][2] = end[i];   // end time
+            activities[i][2] = end[i]; // end time
         }
 
         // Sort by end time using your lambda
@@ -39,5 +36,12 @@ class ActivitySelectionUnsort {
             System.out.print("A" + idx + " ");
         }
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        int start[] = { 1, 3, 0, 5, 8, 5 };
+        int end[] = { 2, 4, 6, 7, 9, 9 };
+        activitiesUnsort(start, end);
     }
 }
