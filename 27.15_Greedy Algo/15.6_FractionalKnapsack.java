@@ -4,7 +4,7 @@ import java.util.Comparator;
 class FractionalKnapsack {
     public static void knapSack(int[] val, int[] weight, int w) {
         double[][] ratio = new double[val.length][2];
-        // 0th col => idx; 1st col => ratio
+        // 0th col => idx; 1st col => ratio(v/w)
 
         for (int i = 0; i < val.length; i++) {
             ratio[i][0] = i;
@@ -15,7 +15,7 @@ class FractionalKnapsack {
 
         int capacity = w;
         int finalValue = 0;
-        for (int i = ratio.length - 1; i >= 0; i--) {
+        for (int i = ratio.length - 1; i >= 0; i--) {   //decending order
             int idx = (int) ratio[i][0];
             if (capacity >= weight[idx]) { // include full item
                 finalValue += val[idx];
