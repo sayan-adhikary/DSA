@@ -1,6 +1,6 @@
 import java.util.*;
 class subarraySum {
-    public static int subarSum(int[] arr, int k){   //TC-O(n)
+    public static int subarrSum(int[] arr, int k){   //TC-O(n)
         int sum = 0, ans = 0;
         Map<Integer, Integer> hm = new HashMap<>();
         hm.put(0, 1);
@@ -17,6 +17,6 @@ class subarraySum {
     public static void main(String[] args) {
         int nums[]={10,2,-2,-20,10};
         int k = -10;
-        System.out.println(subarSum(nums, k));
+        System.out.println(subarrSum(nums, k));
     }
 }
