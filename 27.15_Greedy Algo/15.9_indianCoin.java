@@ -9,7 +9,7 @@ class indianCoin {
 
         ArrayList<Integer> ans = new ArrayList<>();                                 //store the coins
 
-        for (int i = 0; i < coins.length; i++) {
+        for (int i = 0; i < coins.length; i++) {                                    // iterate over the coins
             if (coins[i] <= amount) {                                               // amount should check if it is greater then go inside
 
                 while (coins[i] <= amount) {                                        // if coins is less than amount
@@ -19,9 +19,9 @@ class indianCoin {
                 }
             }
         }
-        System.out.println(ans);
-        System.out.println(ans.size());
-        System.out.println(count);
+        System.out.println(ans);                                                    // print the coins
+        System.out.println(ans.size());                                             // print the count of coins                       
+        System.out.println(count);                                                  // print the count of coins
     }
 
     public static void main(String[] args) {
