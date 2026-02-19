@@ -12,7 +12,7 @@ class hightOfTree {
         }
     }
 
-    public static int height(Node root) {
+    public static int height(Node root) {   //count the Hightof Tree
         if (root == null) {
             return 0;
         }
@@ -22,13 +22,22 @@ class hightOfTree {
         return Math.max(lh, rh) + 1;
     }
 
-    public static int count(Node root) {
+    public static int count(Node root) {    //count the Nodes
         if (root == null) {
             return 0;
         }
         int leftCount = count(root.left);
         int rightCount = count(root.right);
         return leftCount + rightCount + 1;
+    }
+
+    public static int sum(Node root){       //count the sum of Nodes
+        if (root == null) {
+            return 0;
+        }
+        int leftSum = sum(root.left);
+        int rightSum = sum(root.right);
+        return leftSum + rightSum + root.data;
     }
 
     public static void main(String[] args) {
@@ -48,6 +57,7 @@ class hightOfTree {
         root.right.right = new Node(7);
 
         // System.out.println(height(root));
-        System.out.println(count(root));
+        // System.out.println(count(root));
+        System.out.println(sum(root));
     }
 }

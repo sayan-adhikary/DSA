@@ -56,13 +56,12 @@ class binaryTree {
             System.out.print(root.data + " ");
         }
 
-        // Level Oderder
-        public static void levelorder(Node root) {
+        public static void levelorder(Node root) {        // Level Oderder
             if (root == null) {
                 return;
             }
 
-            Queue<Node> q = new LinkedList<>();
+            Queue<Node> q = new LinkedList<>();     //using queue for FIFO
             q.add(root);
             q.add(null);
 
