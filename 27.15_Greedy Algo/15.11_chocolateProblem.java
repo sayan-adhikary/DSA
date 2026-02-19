@@ -54,6 +54,7 @@ class chocolateProblem {
             costHor[i] = sc.nextInt();
         }
         minCost(costVer, costHor, m, n);
+        sc.close();
     }
 }
 
