@@ -2,6 +2,7 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "terminal.integrated.shellIntegration.enabled": true,
     "java.project.sourcePaths": [
+        "35.23_Hashing",
         "27.15_Greedy Algo",
         "26.14_Queue",
         "25.13_Stack",
@@ -15,6 +16,6 @@
         "15.3_2D_Array",
         "14.2_Sorting",
         "13.1_Array",
-        "35.23_Hashing"
+        "28.16_Binary Tree"
     ]
 }
