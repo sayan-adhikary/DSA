@@ -33,11 +33,11 @@ class hightOfTree {
 
     public static void main(String[] args) {
         /*
-         * 1 -> level 1
-         * / \
-         * 2 3 -> level 2
-         * / \ / \
-         * 4 5 6 7 -> level 3
+         *      1 -> level 1
+         *     / \
+         *    2   3 -> level 2
+         *   / \ / \
+         *  4  5 6  7 -> level 3
          */
         Node root = new Node(1);
         root.left = new Node(2);
