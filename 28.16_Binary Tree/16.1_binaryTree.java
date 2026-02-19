@@ -1,6 +1,6 @@
 import java.util.*;
 
-class binaryTree {
+class inaryTree {
     static class Node {
         int data;
         Node left;
@@ -89,8 +89,16 @@ class binaryTree {
 
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
-        BinaryTree tree = new BinaryTree();
-        Node root = tree.buildTree(nodes);
+        Node root = BinaryTree.buildTree(nodes);    //chatgpt(92-99)
+        BinaryTree.preorder(root);
+        System.out.println();
+        BinaryTree.inorder(root);
+        System.out.println();
+        BinaryTree.postorder(root);
+        System.out.println();
+        BinaryTree.levelorder(root);
+        // BinaryTree tree = new BinaryTree();   //apnaCollegeWala code   
+        // Node root = tree.buildTree(nodes);
         // System.out.println(root.data);
 
         // tree.preorder(root);
@@ -99,6 +107,6 @@ class binaryTree {
 
         // tree.postorder(root);
 
-        tree.levelorder(root);
+        // tree.levelorder(root);
     }
 }
