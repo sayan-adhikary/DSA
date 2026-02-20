@@ -1,9 +1,9 @@
-class binarySearch {
-    public static int binarySearch(int []arr,int key){
+class solution {
+    public static int binarySearch(int[] arr,int key){
         int start = 0;
         int end = arr.length - 1;
-        while (start <= end) {
-            int mid = (start + end)/2;
+        while (start <= end) {              // loop will run until start is less than or equal to end
+            int mid = (start + end)/2;      // find the middle index -- we can also use start + (end - start)/2 to avoid overflow
             if (arr[mid] == key) {
                 return mid;
             }
