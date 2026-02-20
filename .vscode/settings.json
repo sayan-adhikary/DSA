@@ -16,6 +16,10 @@
         "15.3_2D_Array",
         "14.2_Sorting",
         "13.1_Array",
-        "28.16_Binary Tree"
-    ]
+        "28.16_Binary Tree",
+        "23.11_Linked_List",
+        "22.10_Array List",
+        "24.12_Double_Linked_List"
+    ],
+    "java.project.referencedLibraries": []
 }
