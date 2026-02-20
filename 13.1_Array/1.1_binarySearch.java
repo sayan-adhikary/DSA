@@ -15,11 +15,11 @@ class binarySearch {
             }
         }
         return -1;
-    }
+    }   
 
     public static void main(String[] args) {
         int []number = {2,4,6,8,10,12,14};
-        int key = 10;
+        int key = 2;
         System.out.println(Search(number, key));
     }
 }
