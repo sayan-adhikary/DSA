@@ -1,5 +1,5 @@
-class solution {
-    public static int binarySearch(int[] arr,int key){
+class binarySearch {
+    public static int Search(int[] arr,int key){
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {              // loop will run until start is less than or equal to end
@@ -20,6 +20,6 @@ class solution {
     public static void main(String[] args) {
         int []number = {2,4,6,8,10,12,14};
         int key = 10;
-        System.out.println(binarySearch(number, key));
+        System.out.println(Search(number, key));
     }
 }
