@@ -231,7 +231,7 @@ class myLinkedList {
         System.out.println("Null");
     }
 
-    public static boolean isCycle() {   //ll is cycle or not
+    public static boolean isCycle() { // ll is cycle or not
         Node fast = head;
         Node slow = head;
 
