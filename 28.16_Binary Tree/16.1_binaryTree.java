@@ -1,6 +1,6 @@
 import java.util.*;
 
-class inaryTree {
+class binaryTree {
     static class Node {
         int data;
         Node left;
@@ -33,7 +33,7 @@ class inaryTree {
             if (root == null) {
                 return;
             }
-            System.out.print(root.data + " ");
+            System.out.print(root.data + " ");  //visit root first then left and right
             preorder(root.left);
             preorder(root.right);
         }
@@ -43,7 +43,7 @@ class inaryTree {
                 return;
             }
             inorder(root.left);
-            System.out.print(root.data + " ");
+            System.out.print(root.data + " "); //visit left first then root and right
             inorder(root.right);
         }
 
@@ -53,10 +53,10 @@ class inaryTree {
             }
             postorder(root.left);
             postorder(root.right);
-            System.out.print(root.data + " ");
+            System.out.print(root.data + " "); //visit left and right first then root
         }
 
-        public static void levelorder(Node root) {        // Level Oderder
+        public static void levelorder(Node root) {        // Level Oderder Traversal using Queue 
             if (root == null) {
                 return;
             }
