@@ -79,5 +79,6 @@ class diameter {
         // System.out.println(diaMeter(root));
 
         System.out.println(diaMeterOf(root).diameter);
+        System.out.println(diaMeterOf(root).height);
     }
 }
