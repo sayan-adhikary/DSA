@@ -3,10 +3,13 @@
     "terminal.integrated.shellIntegration.enabled": true,
     "java.project.sourcePaths": [
         "35.23_Hashing",
+        "28.16_Binary Tree",
         "27.15_Greedy Algo",
         "26.14_Queue",
         "25.13_Stack",
-        "24.12_Linked_List",
+        "24.12_Double_Linked_List",
+        "23.11_Linked_List",
+        "22.10_Array List",
         "21.9_BackTracking",
         "20.8_DIvide & Conquer",
         "19.7_Recursion",
@@ -16,10 +19,8 @@
         "15.3_2D_Array",
         "14.2_Sorting",
         "13.1_Array",
-        "28.16_Binary Tree",
-        "23.11_Linked_List",
-        "22.10_Array List",
-        "24.12_Double_Linked_List"
+        "30.17_Tree",
+        "29.16_Binary Tree"
     ],
     "java.project.referencedLibraries": []
 }
