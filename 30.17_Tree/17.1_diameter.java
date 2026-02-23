@@ -1,21 +1,21 @@
 class diameter {
-    static class Node {
+    static class Node { //backbone of the tree 
         int data;
         Node left;
         Node right;
 
-        Node(int data) {
+        Node(int data) {    
             this.data = data;
             this.left = null;
             this.right = null;
         }
     }
 
-    static class info{
+    static class info { //class to store diameter and height of a node
         int diameter;
         int height;
 
-        info(int dm, int ht){
+        info(int dm, int ht) {
             this.diameter = dm;
             this.height = ht;
         }
@@ -31,8 +31,8 @@ class diameter {
         return Math.max(leftHeight, rightHeight) + 1;
     }
 
-    public static int diaMeter(Node root){  //Approach 1    TC-O(n^2)
-        if(root == null)
+    public static int diaMeter(Node root) { // Approach 1 TC-O(n^2)
+        if (root == null)
             return 0;
 
         int leftDiameter = diaMeter(root.left);
@@ -43,19 +43,19 @@ class diameter {
 
         return Math.max(selfDiameter, Math.max(leftDiameter, rightDiameter));
     }
-    
-    public static info diaMeterOf(Node root){
-        if(root == null)
+
+    public static info diaMeterOf(Node root) {  // Approach 2 TC-O(n)
+        if (root == null)
             return new info(0, 0);
 
-        info leftInfo = diaMeterOf(root.left);
-        info rightInfo = diaMeterOf(root.right);
+        info leftInfo = diaMeterOf(root.left);      //left subtree info
+        info rightInfo = diaMeterOf(root.right);    //right subtree info
 
-        int diam = Math.max (Math.max(leftInfo.diameter, rightInfo.diameter), leftInfo.height + rightInfo.height + 1);
+        int diam = Math.max(Math.max(leftInfo.diameter, rightInfo.diameter), leftInfo.height + rightInfo.height + 1);   //diameter of left subtree, diameter of right subtree, diameter of current node
 
-        int finalHt = Math.max(leftInfo.height, rightInfo.height) + 1;
+        int finalHt = Math.max(leftInfo.height, rightInfo.height) + 1;  //height of current node
 
-        return new info(diam, finalHt);
+        return new info(diam, finalHt); //returning diameter and height of current node
     }
 
      public static void main(String[] args) {
