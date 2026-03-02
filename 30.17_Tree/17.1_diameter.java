@@ -4,7 +4,7 @@ class Diameter {
         Node left;
         Node right;
 
-        Node(int data) {    
+        Node(int data) {    // constructor
             this.data = data;
             this.left = null;
             this.right = null;
@@ -15,7 +15,7 @@ class Diameter {
         int diameter;
         int height;
 
-        Info(int dm, int ht) {
+        Info(int dm, int ht) {  //constructor to initialize diameter and height of a node
             this.diameter = dm;
             this.height = ht;
         }
