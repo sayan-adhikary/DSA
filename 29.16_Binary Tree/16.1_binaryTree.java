@@ -16,7 +16,7 @@ class binaryTree {
     static class BinaryTree {
         static int idx = -1;
 
-        public static Node buildTree(int nodes[]) {
+        public static Node buildTree(int nodes[]) { // build tree using array, -1 means null node
             idx++;
             if (nodes[idx] == -1) {
                 return null;
@@ -29,39 +29,40 @@ class binaryTree {
             return newNode;
         }
 
-        public static void preorder(Node root) {        //preorder
+        public static void preorder(Node root) { // preorder
             if (root == null) {
                 return;
             }
-            System.out.print(root.data + " ");  //visit root first then left and right
+
+            System.out.print(root.data + " "); // visit root first then left and right
             preorder(root.left);
             preorder(root.right);
         }
 
-        public static void inorder(Node root) {         //inorder
+        public static void inorder(Node root) { // inorder
             if (root == null) {
                 return;
             }
             inorder(root.left);
-            System.out.print(root.data + " "); //visit left first then root and right
+            System.out.print(root.data + " "); // visit left first then root and right
             inorder(root.right);
         }
 
-        public static void postorder(Node root) {          //postorder
+        public static void postorder(Node root) { // postorder
             if (root == null) {
                 return;
             }
             postorder(root.left);
             postorder(root.right);
-            System.out.print(root.data + " "); //visit left and right first then root
+            System.out.print(root.data + " "); // visit left and right first then root
         }
 
-        public static void levelorder(Node root) {        // Level Oderder Traversal using Queue 
+        public static void levelorder(Node root) { // Level Oderder Traversal using Queue
             if (root == null) {
                 return;
             }
 
-            Queue<Node> q = new LinkedList<>();     //using queue for FIFO
+            Queue<Node> q = new LinkedList<>(); // using queue for FIFO
             q.add(root);
             q.add(null);
 
@@ -89,15 +90,15 @@ class binaryTree {
 
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
-        Node root = BinaryTree.buildTree(nodes);    //chatgpt(92-99)
+        Node root = BinaryTree.buildTree(nodes); // chatgpt(92-99)
         BinaryTree.preorder(root);
-        System.out.println();
-        BinaryTree.inorder(root);
-        System.out.println();
-        BinaryTree.postorder(root);
-        System.out.println();
-        BinaryTree.levelorder(root);
-        // BinaryTree tree = new BinaryTree();   //apnaCollegeWala code   
+        // System.out.println();
+        // BinaryTree.inorder(root);
+        // System.out.println();
+        // BinaryTree.postorder(root);
+        // System.out.println();
+        // BinaryTree.levelorder(root);
+        // BinaryTree tree = new BinaryTree(); //apnaCollegeWala code
         // Node root = tree.buildTree(nodes);
         // System.out.println(root.data);
 
