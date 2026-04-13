@@ -22,5 +22,5 @@ Student(){
     System.out.println("Constractor called");
     }
 }
-// Constructor is a special method that is called when an object is created.
+// Constructor is a special method(function) that is called when an object is created.
 // It is used to initialize the object.
