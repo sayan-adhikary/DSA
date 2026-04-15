@@ -8,7 +8,7 @@ class stockSpan {
 
         for (int i = 1; i < stocks.length; i++) {
             int currPrice = stocks[i];
-            while (!s.isEmpty() && currPrice > stocks[s.peek()]) {
+            while (!s.isEmpty() && currPrice >= stocks[s.peek()]) {         //we should pop when it same price
                 s.pop();
             }
             if (s.isEmpty()) {
@@ -22,7 +22,7 @@ class stockSpan {
     }
 
     public static void main(String[] args) {
-        int stocks[] = { 100, 80, 60, 70, 60, 85, 100 };
+        int stocks[] = { 3, 7, 7, 6, 1, 2, 6, 3, 7, 5 };
         int span[] = new int[stocks.length];
         stocksSpan(stocks, span);
 

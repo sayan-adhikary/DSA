@@ -2,18 +2,19 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "terminal.integrated.shellIntegration.enabled": true,
     "java.project.sourcePaths": [
-        "13.1_Array",
-        "14.2_Sorting",
-        "15.3_2D_Array",
-        "16.4_String",
-        "17.5_Bit Manipulation",
-        "18.6_OOPS",
-        "19.7_Recursion",
-        "20.8_DIvide & Conquer",
-        "28.15_Greedy Algo",
-        "29.16_Binary Tree",
+        "35.23_Hashing",
         "30.17_Tree",
-        "35.23_Hashing"
+        "29.16_Binary Tree",
+        "28.15_Greedy Algo",
+        "20.8_DIvide & Conquer",
+        "19.7_Recursion",
+        "18.6_OOPS",
+        "17.5_Bit Manipulation",
+        "16.4_String",
+        "15.3_2D_Array",
+        "14.2_Sorting",
+        "13.1_Array",
+        "26.13_Stack"
     ],
     "java.project.referencedLibraries": []
 }
