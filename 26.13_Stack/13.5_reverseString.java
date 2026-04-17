@@ -1,7 +1,7 @@
 import java.util.*;
 
 // class reverseString {
-//     public static void reverseString(String str){
+//     public static void reverseStr(String str){
 //         Stack<Character> s= new Stack<>();
 //         for (int i = 0; i < str.length(); i++) {
 //             s.push(str.charAt(i));
@@ -14,12 +14,12 @@ import java.util.*;
 //     public static void main(String[] args) {
 //         String str1 = "ABC";
 //         System.out.println(str1);
-//         reverseString(str1);
+//         reverseStr(str1);
 //     }
 // }
 
 class reverseString {
-    public static String reverseString(String str){
+    public static String reverseStr(String str){
         Stack<Character> s = new Stack<>();
         int idx = 0;
         while (idx < str.length()) {
@@ -35,7 +35,7 @@ class reverseString {
     }
     public static void main(String[] args) {
         String str = "abc";
-        String result = reverseString(str);
+        String result = reverseStr(str);
         System.out.println(result);
     }
 }
