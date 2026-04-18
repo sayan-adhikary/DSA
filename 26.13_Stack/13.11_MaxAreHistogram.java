@@ -33,13 +33,13 @@ class MaxAreHistogram {
         return maxArea;
     }
 
-    public static int maxArea2(int arr[]) {     //tc = O(n) sc = O(n)
+    public static int maxArea2(int arr[]) { // tc = O(n) sc = O(n)
         int maxArea = 0;
         int nsl[] = new int[arr.length];
         int nsr[] = new int[arr.length];
         Stack<Integer> st = new Stack<>();
 
-        //next smaller to right
+        // next smaller to right
         for (int i = arr.length - 1; i >= 0; i--) {
             while (!st.isEmpty() && arr[st.peek()] >= arr[i]) {
                 st.pop();
@@ -51,9 +51,11 @@ class MaxAreHistogram {
             }
             st.push(i);
         }
+        System.out.println(nsr[0] + " " + nsr[1] + " " + nsr[2] + " " + nsr[3] + " " + nsr[4] + " " + nsr[5]);
 
-        //next smaller to left
-        st = new Stack<>();
+        // next smaller to left
+        // st = new Stack<>();
+        st.clear();
         for (int i = 0; i < arr.length; i++) {
             while (!st.isEmpty() && arr[st.peek()] >= arr[i]) {
                 st.pop();
@@ -65,6 +67,7 @@ class MaxAreHistogram {
             }
             st.push(i);
         }
+        System.out.println(nsl[0] + " " + nsl[1] + " " + nsl[2] + " " + nsl[3] + " " + nsl[4] + " " + nsl[5]);
 
         // Current Area = j - i - 1 = nsr[i] - nsl[i] - 1
         for (int i = 0; i < arr.length; i++) {
