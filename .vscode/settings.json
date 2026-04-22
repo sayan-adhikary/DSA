@@ -6,6 +6,7 @@
         "30.17_Tree",
         "29.16_Binary Tree",
         "28.15_Greedy Algo",
+        "26.13_Stack",
         "20.8_DIvide & Conquer",
         "19.7_Recursion",
         "18.6_OOPS",
@@ -14,7 +15,7 @@
         "15.3_2D_Array",
         "14.2_Sorting",
         "13.1_Array",
-        "26.13_Stack"
+        "27.14_Queue"
     ],
     "java.project.referencedLibraries": []
 }
