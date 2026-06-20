@@ -1,11 +1,16 @@
-class Main{
-    public static void print(String s1, int count){
-        // if(count == 10) return;
-        System.out.println(s1 + " is printing");
-        print(s1,count+1);
+class Main {
+    public static int sum(int n) { // 10
+        // 10 + 9 + 8 + 7 + .....
+        // base case
+        if (n == 1) {
+            return 1;
+        }
+        int ans = sum(n - 1);
+        int ans1 = ans + n;
+        return ans1;
     }
-    
+
     public static void main(String[] args) {
-        print("Sayan",0);
+        System.out.println(sum(10));
     }
 }
